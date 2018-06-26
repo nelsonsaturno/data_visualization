@@ -4,6 +4,9 @@ import requests
 
 
 class IndexPricesView(TemplateView):
+    """
+    Show all the Index prices sorted by date.
+    """
     template_name = 'index_prices.html'
 
     def get(self, request, *args, **kwargs):
